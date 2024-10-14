@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    align-items: center;
+    background-color: rgb(81, 79, 84);
+}
+
+.main {
+    margin-left: 40%;
+    margin-top: 200px;
+    width: 100px;
+    height: 100px;
+    background-color: red; 
+    animation: move 5s linear infinite; 
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0) ; 
+        background-color: red; 
+    }
+    25% {
+        transform: translate(0, 200px); 
+        background-color: blue; 
+    }
+    50% {
+        transform: translate(200px, 200px); 
+        background-color: green; 
+    }
+    75% {
+        transform: translate(200px, 0); 
+        background-color: yellow; 
+    }
+    100% {
+        transform: translate(0, 0); 
+        background-color: red; 
+    }
+}
